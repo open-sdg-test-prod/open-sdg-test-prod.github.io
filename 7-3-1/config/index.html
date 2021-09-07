@@ -128,7 +128,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20210907132928">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20210907145926">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -139,10 +139,10 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
           <!-- Global site tag (gtag.js) - Google Analytics -->
 <script
-    
+    type="text/plain" data-type="application/javascript" data-name="google-analytics"
     async
-    src="https://www.googletagmanager.com/gtag/js?id=G-BFYXBP4PH2"></script>
-<script >
+    data-src="https://www.googletagmanager.com/gtag/js?id=G-BFYXBP4PH2"></script>
+<script type="text/plain" data-type="application/javascript" data-name="google-analytics">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -156,7 +156,7 @@ var translations = {
         
         
           <!-- Google Tag Manager -->
-<script >
+<script type="text/plain" data-type="application/javascript" data-name="google-analytics">
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -1202,9 +1202,157 @@ data-event-label="high"
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 
 
+<script>
+  var klaroConfig = {
+    version: 1,
+    elementID: 'klaro',
+    styling: {
+        theme: ['light', 'top', 'wide'],
+    },
+    noAutoLoad: false,
+    htmlTexts: false,
+    embedded: false,
+    groupByPurpose: true,
+    storageMethod: 'cookie',
+    cookieName: 'cookie_settings',
+    cookieExpiresAfterDays: 365,
+    default: false,
+    mustConsent: false,
+    acceptAll: true,
+    hideDeclineAll: false,
+    hideLearnMore: false,
+    noticeAsModal: false,
+    services: [
+        {
+            name: 'contrast',
+            default: true,
+            purposes: ['functional'],
+            cookies: ['contrast'],
+            required: true,
+            optOut: false,
+            onlyOnce: true,
+        },
+        {
+            name: 'cookie_settings',
+            default: true,
+            purposes: ['functional'],
+            cookies: ['cookie_settings'],
+            required: true,
+            optOut: false,
+            onlyOnce: true,
+        },
+        
+    ],
+};
+
+  klaroConfig.lang = 'en';
+klaroConfig.translations = {
+    en: {
+        acceptAll: null,
+        acceptSelected: null,
+        close: null,
+        consentModal: {
+            description: null,
+            title: null,
+        },
+        consentNotice: {
+            changeDescription: null,
+            description: null,
+            learnMore: null,
+            testing: null,
+        },
+        contextualConsent: {
+            acceptAlways: null,
+            acceptOnce: null,
+            description: null,
+        },
+        decline: null,
+        ok: null,
+        poweredBy: null,
+        privacyPolicy: {
+            name: null,
+            text: null,
+        },
+        purposeItem: {
+            service: null,
+            services: null,
+        },
+        purposes: {
+            functional: {
+                description: null,
+                title: null,
+            },
+            analytics: {
+                description: null,
+                title: null,
+            },
+        },
+        save: null,
+        service: {
+            disableAll: {
+                description: null,
+                title: null,
+            },
+            optOut: {
+                description: null,
+                title: null,
+            },
+            purpose: null,
+            purposes: null,
+            required: {
+                description: null,
+                title: null,
+            },
+        },
+    },
+};
+var allRequired = true;
+klaroConfig.services.forEach(function(service) {
+    if (!service.required) {
+        allRequired = false;
+    }
+    if (service.name === 'contrast') {
+        service.translations = {
+            en: {
+                description: null,
+                title: null,
+            },
+        }
+    }
+    else if (service.name === 'cookie_settings') {
+        service.translations = {
+            en: {
+                description: null,
+                title: null,
+            },
+        }
+    }
+    else if (service.name === 'google-analytics') {
+        service.translations = {
+            en: {
+                description: null,
+                title: null,
+            },
+        }
+    }
+});
+
+if (allRequired) {
+    klaroConfig.translations['en'].consentNotice.description = null;
+    klaroConfig.translations['en'].ok = null;
+    klaroConfig.hideDeclineAll = true;
+    klaroConfig.hideLearnMore = true;
+}
+
+</script>
+<script src="https://cdn.kiprotect.com/klaro/v0.7/klaro-no-css.js"></script>
+<script>translations['cookies'] = translations['cookies'] || {};
+    translations['cookies']['cookie_settings'] = '';</script>
 
 
-  <script >
+
+
+  <script type="text/plain" data-type="application/javascript" data-name="google-analytics">
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -1235,12 +1383,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20210907132928'></script>
+<script src='/assets/js/sdg.js?v=20210907145926'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20210907132928"></script><script>
+    <script src="/assets/js/custom.js?v=20210907145926"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
