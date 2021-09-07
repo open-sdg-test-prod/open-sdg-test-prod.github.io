@@ -128,7 +128,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20210826093225">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20210907131002">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -665,6 +665,7 @@ data-event-label="high"
     }
 
     // Set values according to this site's configuration.
+    
       try {
         var currentValue = normalizeCurrentValue('accessible_charts', true);
         var propertyEditor = editor.getEditor('root.accessible_charts');
@@ -677,6 +678,8 @@ data-event-label="high"
         console.log('Unable to set config key: accessible_charts');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.accessible_charts'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('accessible_tabs', true);
         var propertyEditor = editor.getEditor('root.accessible_tabs');
@@ -689,6 +692,8 @@ data-event-label="high"
         console.log('Unable to set config key: accessible_tabs');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.accessible_tabs'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('analytics', {"ua":"UA-201075064-1","gtag":"G-BFYXBP4PH2","gtm":"GTM-K5J7R8C"});
         var propertyEditor = editor.getEditor('root.analytics');
@@ -701,6 +706,8 @@ data-event-label="high"
         console.log('Unable to set config key: analytics');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.analytics'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('breadcrumbs', {"goal":[{"path":"/","label":"general.home"},{"path":"/goals","label":"general.goals"}],"indicator":[{"path":"/","label":"general.home"},{"path":"/goals","label":"general.goals"}],"post":[{"path":"/","label":"general.home"},{"path":"/news","label":"menu.updates"}]});
         var propertyEditor = editor.getEditor('root.breadcrumbs');
@@ -713,6 +720,8 @@ data-event-label="high"
         console.log('Unable to set config key: breadcrumbs');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.breadcrumbs'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('contrast_type', "default");
         var propertyEditor = editor.getEditor('root.contrast_type');
@@ -725,6 +734,8 @@ data-event-label="high"
         console.log('Unable to set config key: contrast_type');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.contrast_type'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('country', {"name":"Australia","adjective":"Australian"});
         var propertyEditor = editor.getEditor('root.country');
@@ -737,6 +748,8 @@ data-event-label="high"
         console.log('Unable to set config key: country');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.country'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('create_goals', {"layout":"goal-by-target-vertical","previous_next_links":false,"goals":[]});
         var propertyEditor = editor.getEditor('root.create_goals');
@@ -749,6 +762,8 @@ data-event-label="high"
         console.log('Unable to set config key: create_goals');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.create_goals'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('create_indicators', {"layout":"indicator","previous_next_links":false});
         var propertyEditor = editor.getEditor('root.create_indicators');
@@ -761,6 +776,8 @@ data-event-label="high"
         console.log('Unable to set config key: create_indicators');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.create_indicators'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('create_pages', [{"filename":"","folder":"/","layout":"frontpage-alt","title":""},{"filename":"","folder":"/goals","layout":"goals","title":""},{"filename":"","folder":"/reporting-status","layout":"reportingstatus","title":""},{"filename":"indicators.json","folder":"/","layout":"indicator-json","title":""},{"filename":"","folder":"/search","layout":"search","title":""}]);
         var propertyEditor = editor.getEditor('root.create_pages');
@@ -773,6 +790,8 @@ data-event-label="high"
         console.log('Unable to set config key: create_pages');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.create_pages'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('custom_css', []);
         var propertyEditor = editor.getEditor('root.custom_css');
@@ -785,6 +804,8 @@ data-event-label="high"
         console.log('Unable to set config key: custom_css');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.custom_css'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('custom_js', ["/assets/js/custom.js"]);
         var propertyEditor = editor.getEditor('root.custom_js');
@@ -797,6 +818,8 @@ data-event-label="high"
         console.log('Unable to set config key: custom_js');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.custom_js'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('data_edit_url', "data");
         var propertyEditor = editor.getEditor('root.data_edit_url');
@@ -821,6 +844,8 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set "required" flag: data_edit_url');
       }propertyEditorAccessibilityFixes(editor.getEditor('root.data_edit_url'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('data_fields', {"units":"","series":""});
         var propertyEditor = editor.getEditor('root.data_fields');
@@ -833,6 +858,8 @@ data-event-label="high"
         console.log('Unable to set config key: data_fields');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_fields'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('date_formats', []);
         var propertyEditor = editor.getEditor('root.date_formats');
@@ -845,6 +872,8 @@ data-event-label="high"
         console.log('Unable to set config key: date_formats');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.date_formats'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('disclaimer', {"phase":"","message":""});
         var propertyEditor = editor.getEditor('root.disclaimer');
@@ -857,6 +886,8 @@ data-event-label="high"
         console.log('Unable to set config key: disclaimer');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.disclaimer'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('email_contacts', {"questions":"test@example.com","suggestions":"test@example.com","functional":"test@example.com"});
         var propertyEditor = editor.getEditor('root.email_contacts');
@@ -869,6 +900,8 @@ data-event-label="high"
         console.log('Unable to set config key: email_contacts');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.email_contacts'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('environment', "production");
         var propertyEditor = editor.getEditor('root.environment');
@@ -893,6 +926,8 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set "required" flag: environment');
       }propertyEditorAccessibilityFixes(editor.getEditor('root.environment'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('footer_language_toggle', "none");
         var propertyEditor = editor.getEditor('root.footer_language_toggle');
@@ -905,6 +940,8 @@ data-event-label="high"
         console.log('Unable to set config key: footer_language_toggle');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.footer_language_toggle'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('footer_menu', [{"path":"/contact-us","translation_key":"menu.contact_us"},{"path":"https://twitter.com/MyTwitterAccount","translation_key":"general.twitter"},{"path":"https://facebook.com/MyFacebookAccount","translation_key":"general.facebook"},{"path":"/about/cookies-and-privacy/","translation_key":"menu.cookies"}]);
         var propertyEditor = editor.getEditor('root.footer_menu');
@@ -917,6 +954,8 @@ data-event-label="high"
         console.log('Unable to set config key: footer_menu');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.footer_menu'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('frontpage_cards', [{"title":"frontpage.download_all","content":"","include":"components/download-all-data.html","button_label":"","button_link":"","rule_color":""},{"title":"Lorem ipsum","content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis\ncursus est sed dapibus.\n","include":"","button_label":"Read more","button_link":"https://example.com","rule_color":""},{"title":"Nam vestibulum","content":"Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a\ninterdum risus enim vitae tortor. Donec feugiat accumsan rutrum.\n","include":"","button_label":"Read more","button_link":"https://example.com","rule_color":""}]);
         var propertyEditor = editor.getEditor('root.frontpage_cards');
@@ -929,6 +968,8 @@ data-event-label="high"
         console.log('Unable to set config key: frontpage_cards');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.frontpage_cards'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('frontpage_goals_grid', {"title":"Our data for Sustainable Development Goal indicators","description":"Click on each goal for our Sustainable Development Goal global indicator data."});
         var propertyEditor = editor.getEditor('root.frontpage_goals_grid');
@@ -941,6 +982,8 @@ data-event-label="high"
         console.log('Unable to set config key: frontpage_goals_grid');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.frontpage_goals_grid'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('frontpage_heading', "");
         var propertyEditor = editor.getEditor('root.frontpage_heading');
@@ -953,6 +996,8 @@ data-event-label="high"
         console.log('Unable to set config key: frontpage_heading');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.frontpage_heading'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('frontpage_instructions', "");
         var propertyEditor = editor.getEditor('root.frontpage_instructions');
@@ -965,6 +1010,8 @@ data-event-label="high"
         console.log('Unable to set config key: frontpage_instructions');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.frontpage_instructions'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('frontpage_introduction_banner', {"title":"frontpage.intro_title","description":"frontpage.intro_body"});
         var propertyEditor = editor.getEditor('root.frontpage_introduction_banner');
@@ -977,6 +1024,8 @@ data-event-label="high"
         console.log('Unable to set config key: frontpage_introduction_banner');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.frontpage_introduction_banner'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('goal_image_base', "https://open-sdg.org/sdg-translations/assets/img/goals");
         var propertyEditor = editor.getEditor('root.goal_image_base');
@@ -1001,6 +1050,8 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set "required" flag: goal_image_base');
       }propertyEditorAccessibilityFixes(editor.getEditor('root.goal_image_base'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('goal_image_extension', "");
         var propertyEditor = editor.getEditor('root.goal_image_extension');
@@ -1013,6 +1064,8 @@ data-event-label="high"
         console.log('Unable to set config key: goal_image_extension');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.goal_image_extension'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('goals_page', {"title":"general.goals","description":"goal.description"});
         var propertyEditor = editor.getEditor('root.goals_page');
@@ -1025,6 +1078,8 @@ data-event-label="high"
         console.log('Unable to set config key: goals_page');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.goals_page'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('graph_color_headline', "#004466");
         var propertyEditor = editor.getEditor('root.graph_color_headline');
@@ -1037,6 +1092,8 @@ data-event-label="high"
         console.log('Unable to set config key: graph_color_headline');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_color_headline'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('graph_color_headline_high_contrast', "#55a6e5");
         var propertyEditor = editor.getEditor('root.graph_color_headline_high_contrast');
@@ -1049,6 +1106,8 @@ data-event-label="high"
         console.log('Unable to set config key: graph_color_headline_high_contrast');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_color_headline_high_contrast'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('graph_color_set', "accessible");
         var propertyEditor = editor.getEditor('root.graph_color_set');
@@ -1061,6 +1120,8 @@ data-event-label="high"
         console.log('Unable to set config key: graph_color_set');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_color_set'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('graph_color_list', []);
         var propertyEditor = editor.getEditor('root.graph_color_list');
@@ -1073,6 +1134,8 @@ data-event-label="high"
         console.log('Unable to set config key: graph_color_list');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_color_list'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('graph_color_number', 0);
         var propertyEditor = editor.getEditor('root.graph_color_number');
@@ -1084,7 +1147,11 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set config key: graph_color_number');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_color_number'));propertyEditorAccessibilityFixes(editor.getEditor('root.graph_title_from_series'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_color_number'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_title_from_series'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('header', {"include":"header-menu-left-aligned.html"});
         var propertyEditor = editor.getEditor('root.header');
@@ -1097,6 +1164,8 @@ data-event-label="high"
         console.log('Unable to set config key: header');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.header'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('header_language_toggle', "dropdown");
         var propertyEditor = editor.getEditor('root.header_language_toggle');
@@ -1109,6 +1178,8 @@ data-event-label="high"
         console.log('Unable to set config key: header_language_toggle');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.header_language_toggle'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('hide_empty_metadata', true);
         var propertyEditor = editor.getEditor('root.hide_empty_metadata');
@@ -1121,6 +1192,8 @@ data-event-label="high"
         console.log('Unable to set config key: hide_empty_metadata');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.hide_empty_metadata'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('indicator_config_form', {"enabled":true,"dropdowns":[],"repository_link":"https://github.com/open-sdg/open-sdg-data-starter/tree/develop/indicator-config","translation_link":""});
         var propertyEditor = editor.getEditor('root.indicator_config_form');
@@ -1133,6 +1206,8 @@ data-event-label="high"
         console.log('Unable to set config key: indicator_config_form');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_config_form'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('indicator_data_form', {"enabled":true,"repository_link":"https://github.com/open-sdg/open-sdg-data-starter/tree/develop/data"});
         var propertyEditor = editor.getEditor('root.indicator_data_form');
@@ -1145,6 +1220,8 @@ data-event-label="high"
         console.log('Unable to set config key: indicator_data_form');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_data_form'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('indicator_metadata_form', {"enabled":true,"dropdowns":[],"repository_link":"https://github.com/open-sdg/open-sdg-data-starter/tree/develop/meta","translation_link":"","language":"","scopes":["national","global"],"exclude_fields":[],"translated":false});
         var propertyEditor = editor.getEditor('root.indicator_metadata_form');
@@ -1157,6 +1234,8 @@ data-event-label="high"
         console.log('Unable to set config key: indicator_metadata_form');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_metadata_form'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('languages', ["en","es"]);
         var propertyEditor = editor.getEditor('root.languages');
@@ -1181,6 +1260,8 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set "required" flag: languages');
       }propertyEditorAccessibilityFixes(editor.getEditor('root.languages'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('languages_public', []);
         var propertyEditor = editor.getEditor('root.languages_public');
@@ -1193,6 +1274,8 @@ data-event-label="high"
         console.log('Unable to set config key: languages_public');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.languages_public'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('logos', []);
         var propertyEditor = editor.getEditor('root.logos');
@@ -1205,6 +1288,8 @@ data-event-label="high"
         console.log('Unable to set config key: logos');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.logos'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('map_layers', []);
         var propertyEditor = editor.getEditor('root.map_layers');
@@ -1217,6 +1302,8 @@ data-event-label="high"
         console.log('Unable to set config key: map_layers');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.map_layers'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('map_options', {"minZoom":5,"maxZoom":10,"tileURL":"","tileOptions":{"id":"","accessToken":"","attribution":""},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}});
         var propertyEditor = editor.getEditor('root.map_options');
@@ -1229,6 +1316,8 @@ data-event-label="high"
         console.log('Unable to set config key: map_options');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.map_options'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('menu', [{"path":"/goals","translation_key":"general.goals","dropdown":[]},{"path":"/reporting-status","translation_key":"menu.reporting_status","dropdown":[]},{"path":"/about","translation_key":"menu.about","dropdown":[]},{"path":"/faq","translation_key":"menu.faq","dropdown":[]},{"path":"/news","translation_key":"menu.updates","dropdown":[]}]);
         var propertyEditor = editor.getEditor('root.menu');
@@ -1253,6 +1342,8 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set "required" flag: menu');
       }propertyEditorAccessibilityFixes(editor.getEditor('root.menu'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('metadata_edit_url', "metadata");
         var propertyEditor = editor.getEditor('root.metadata_edit_url');
@@ -1277,6 +1368,8 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set "required" flag: metadata_edit_url');
       }propertyEditorAccessibilityFixes(editor.getEditor('root.metadata_edit_url'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('metadata_tabs', []);
         var propertyEditor = editor.getEditor('root.metadata_tabs');
@@ -1289,6 +1382,8 @@ data-event-label="high"
         console.log('Unable to set config key: metadata_tabs');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.metadata_tabs'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('news', {"category_links":false});
         var propertyEditor = editor.getEditor('root.news');
@@ -1301,6 +1396,8 @@ data-event-label="high"
         console.log('Unable to set config key: news');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.news'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('non_global_metadata', "indicator.national_metadata");
         var propertyEditor = editor.getEditor('root.non_global_metadata');
@@ -1313,6 +1410,8 @@ data-event-label="high"
         console.log('Unable to set config key: non_global_metadata');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.non_global_metadata'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('remote_data_prefix', "https://open-sdg-test-prod.github.io/open-sdg-test-prod-data/");
         var propertyEditor = editor.getEditor('root.remote_data_prefix');
@@ -1337,6 +1436,8 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set "required" flag: remote_data_prefix');
       }propertyEditorAccessibilityFixes(editor.getEditor('root.remote_data_prefix'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('reporting_status', {"title":"status.reporting_status","description":"status.description","disaggregation_tabs":false});
         var propertyEditor = editor.getEditor('root.reporting_status');
@@ -1349,6 +1450,8 @@ data-event-label="high"
         console.log('Unable to set config key: reporting_status');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.reporting_status'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('repository_url_data', "https://github.com/open-sdg-test/data");
         var propertyEditor = editor.getEditor('root.repository_url_data');
@@ -1361,6 +1464,8 @@ data-event-label="high"
         console.log('Unable to set config key: repository_url_data');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.repository_url_data'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('repository_url_site', "https://github.com/open-sdg-test/site");
         var propertyEditor = editor.getEditor('root.repository_url_site');
@@ -1373,6 +1478,8 @@ data-event-label="high"
         console.log('Unable to set config key: repository_url_site');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.repository_url_site'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('search_index_boost', []);
         var propertyEditor = editor.getEditor('root.search_index_boost');
@@ -1385,6 +1492,8 @@ data-event-label="high"
         console.log('Unable to set config key: search_index_boost');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.search_index_boost'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('search_index_extra_fields', []);
         var propertyEditor = editor.getEditor('root.search_index_extra_fields');
@@ -1397,6 +1506,8 @@ data-event-label="high"
         console.log('Unable to set config key: search_index_extra_fields');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.search_index_extra_fields'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('series_toggle', true);
         var propertyEditor = editor.getEditor('root.series_toggle');
@@ -1409,6 +1520,8 @@ data-event-label="high"
         console.log('Unable to set config key: series_toggle');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.series_toggle'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('sharethis_property', "");
         var propertyEditor = editor.getEditor('root.sharethis_property');
@@ -1421,6 +1534,8 @@ data-event-label="high"
         console.log('Unable to set config key: sharethis_property');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.sharethis_property'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('site_config_form', {"enabled":true,"dropdowns":[],"repository_link":"https://github.com/open-sdg-test/site/tree/develop/_data","translation_link":""});
         var propertyEditor = editor.getEditor('root.site_config_form');
@@ -1432,7 +1547,15 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set config key: site_config_form');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.site_config_form'));propertyEditorAccessibilityFixes(editor.getEditor('root.validate_indicator_config'));propertyEditorAccessibilityFixes(editor.getEditor('root.validate_site_config'));function isTranslationKey(text) {
+    propertyEditorAccessibilityFixes(editor.getEditor('root.site_config_form'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.validate_indicator_config'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.validate_site_config'));
+
+    
+
+    function isTranslationKey(text) {
       var parts = text.split('.');
       if (parts.length !== 2) {
         return false;
@@ -1582,12 +1705,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/assets/js/sdg.js?v=20210826093225'></script>
+<script src='/assets/js/sdg.js?v=20210907131002'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20210826093225"></script><script>
+    <script src="/assets/js/custom.js?v=20210907131002"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
